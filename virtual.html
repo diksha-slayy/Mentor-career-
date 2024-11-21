@@ -1,0 +1,150 @@
+<html>
+<head>
+  <title>Virtual Career Counseling</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* Custom styles for mobile menu */
+    .mobile-menu {
+      display: none;
+    }
+    @media (max-width: 640px) {
+      .mobile-menu {
+        display: block;
+      }
+      .desktop-menu {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body class="font-roboto bg-gray-100">
+  <header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Virtual Career Counseling</h1>
+      <nav class="desktop-menu">
+        <ul class="flex space-x-4">
+          <li><a class="hover:underline" href="#">Home</a></li>
+          <li><a class="hover:underline" href="#">Resources</a></li>
+          <li><a class="hover:underline" href="#">Career Pathways</a></li>
+          <li><a class="hover:underline" href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <button class="text-white" id="menuButton">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-menu hidden bg-blue-600 text-white p-4" id="mobileMenu">
+    <ul>
+      <li class="mb-2"><a class="hover:underline" href="#">Home</a></li>
+      <li class="mb-2"><a class="hover:underline" href="#">Resources</a></li>
+      <li class="mb-2"><a class="hover:underline" href="#">Career Pathways</a></li>
+      <li class="mb-2"><a class="hover:underline" href="#">Contact</a></li>
+    </ul>
+  </div>
+  <main class="container mx-auto mt-8 p-4">
+    <section class="bg-white p-6 rounded-lg shadow-md mb-8">
+      <h2 class="text-xl font-bold mb-4">Personalized Career Counseling</h2>
+      <p class="mb-4">Our platform offers personalized career counseling for undergraduate and master's students. Get tailored advice and recommendations to help you navigate your career path.</p>
+      <div class="flex justify-center">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Start Chat</button>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">Curated Resources</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a book and a laptop on a desk" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/rmB84dqGZooQJFYHUyf7YO6iXHKJ3YJes0LJMguGXtY1SHzTA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 1</h3>
+          <p class="mt-1">Description of resource 1.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource1" target="_blank">Learn More</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person writing notes in a notebook" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/feFCecDe6F6uZSo4zUG93tZpx0C5tb7YeuzXXefXC4HGXpj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 2</h3>
+          <p class="mt-1">Description of resource 2.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource2" target="_blank">Learn More</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a group of people having a discussion" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/DcIZvt2XyUIUF1ynhLyS1ggCifspA2sYISbIDjF2uoubpj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 3</h3>
+          <p class="mt-1">Description of resource 3.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource3" target="_blank">Learn More</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person using a computer" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/DeW7CHkllSQAKqAetYExxbCiUvYt9mq8MhSpdS2mqx3zSHzTA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 4</h3>
+          <p class="mt-1">Description of resource 4.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource4" target="_blank">Learn More</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person reading a book" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/6ENZTvHFuvptHBid3J3t4ZioqSHeClcCfWfBlGSHKh3llOmnA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 5</h3>
+          <p class="mt-1">Description of resource 5.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource5" target="_blank">Learn More</a>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person attending an online course" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/2fNvjnVexjmhGk3d2aseCZmYSbYPZMsNcfSHZ3XVoNECLdMPB.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Resource 6</h3>
+          <p class="mt-1">Description of resource 6.</p>
+          <a class="text-blue-600 hover:underline" href="https://example.com/resource6" target="_blank">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">Career Pathway Recommendations</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person working in a laboratory" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/NuJdwpjY6u5qKV9yxJcS7fJyj5Y9SwcM87YYsskX2dPWpj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 1</h3>
+          <p class="mt-1">Description of career pathway 1.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person giving a presentation" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/Sp4hN9AGfuUJLyiicdbmZbbyQsjlECb9jl9fiiSie3mylOmnA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 2</h3>
+          <p class="mt-1">Description of career pathway 2.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person working on a computer" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/Sw4Wakpn7IYmMBzmGCkg0cr3iqaGqrqEbmBCZoYfotdapj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 3</h3>
+          <p class="mt-1">Description of career pathway 3.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person conducting a meeting" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/vDmvkjEs3oJDAhsZ6InXVsJam1aBbrHGaqxfJR7jvCKVpj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 4</h3>
+          <p class="mt-1">Description of career pathway 4.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person working in a healthcare setting" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/xg8hHPykC04gB5ePCdRcqSeQbe6Wqedh5UPWr7Y6vCl1KdMPB.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 5</h3>
+          <p class="mt-1">Description of career pathway 5.</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow-md">
+          <img alt="Image of a person working in a creative studio" class="w-full h-40 object-cover rounded-t-lg" height="200" src="https://storage.googleapis.com/a1aa/image/EOmVd15aTx79Iho45Tyjika8XvDCrNB0LExjYn2fdJjXpj5JA.jpg" width="300"/>
+          <h3 class="text-lg font-bold mt-2">Career Pathway 6</h3>
+          <p class="mt-1">Description of career pathway 6.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-blue-600 text-white p-4 mt-8">
+    <div class="container mx-auto text-center">
+      <p>© 2023 Virtual Career Counseling. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('menuButton').addEventListener('click', function() {
+      var mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.remove('hidden');
+      } else {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
